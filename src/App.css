@@ -1,0 +1,903 @@
+/* *{
+  padding: 0;
+  margin: 0;
+}
+
+
+.Navbar{
+  width: 80%;
+  height: fit-content;
+  margin: 1rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.N1{
+  margin-bottom: 10px;
+  display: flex;
+}
+#N1_1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  transform: rotate(270deg);
+}
+#N1_2{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.N2{
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.active{
+  background-color: cadetblue;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.icon{
+  color: black !important;
+  top: 0 !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+.Home{
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+}
+.hp1{
+  width: 800px;
+  height: 410px;
+  margin-right: 10px;
+  color: white;
+  position: relative;
+  animation: fade 1.5s;
+}
+.hp1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: url('https://wallpaperaccess.com/full/744687.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+.hp2{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  color: white;
+  position: relative;
+  animation: fade 1.5s;
+}
+.hp2::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqPJoBuRPND1hJmnesACdz7n8B3PpPcUtuQ&usqp=CAU') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+#hp1_1{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+#hp1_2{
+  position: absolute;
+  left: 5%;
+  bottom: 18%;
+  opacity: 0.7;
+}
+.hp2_1{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 2%;
+  bottom: 30%;
+}
+.hp2_2{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 2%;
+  bottom: 16%;
+}
+.hp2_3{
+  position: absolute;
+  left: 2%;
+  bottom: 8%;
+  opacity: 0.7;
+}
+.carousel{
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 4px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.activeDot, .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.latest{
+  width: fit-content;
+  margin-left: 8rem;
+  border-bottom: 2px solid red;
+  font-size: 1.5rem;
+}
+.LatestBox{
+  width: 80%;
+  height: fit-content;
+  margin: 10px 0 10px 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.joshua{
+  width: 350px;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.j_1{
+  width: 100%;
+  height: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+.j_2{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.j_3{
+  opacity: 0.7;
+  margin-left: 2rem;
+}
+.j_4{
+  margin-left: 2rem;
+}
+
+.Home2{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  cursor: pointer;
+}
+.castle3{
+  width: 14rem;
+  height: 8rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+.Adv{
+  width: 100%;
+  height: 75vh;
+  border: 1px solid #707070;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latArt{
+  width: 100%;
+  height: 410px;
+  margin: auto;
+  color: rgb(238, 235, 235);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+.latArt::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.squarespace-cdn.com/content/v1/55ee34aae4b0bf70212ada4c/1501723765008-MCG767RYDZGDVDF5F678/image-asset.jpeg?format=1000w') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.92;
+}
+#la1{
+  font-size: 1.8rem;
+}
+#la2{
+  opacity: 0.7;
+  position: relative;
+  top: 4.5rem;
+}
+.view{
+  opacity: 0.7;
+  margin-left: 8rem;
+}
+
+
+.stories{
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+.Bollywood{
+  width: 80%;
+  height: fit-content;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.B1{
+  width: 600px;
+  height: fit-content;
+  margin: 0 1rem;
+}
+.B1_1{
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px;
+  border-bottom: 2px solid red;
+}
+
+.castle{
+  width: 16rem;
+  height: 11rem;
+  margin-right: 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.g_2{
+  opacity: 0.7;
+}
+
+.B2{
+  width: 300px;
+  height: fit-content;
+  margin: 0 1rem;
+}
+
+#B2_1{
+  width: 100%;
+  height: 12rem;
+  border-radius: 4px;
+}
+.B2_2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.castle2{
+  width: 8rem;
+  height: 5.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px grey;
+}
+.B2_2_1{
+  font-size: small;
+}
+.B2_3{
+  width: 100%;
+  height: 110vh;
+  border: 1px solid #707070;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.material-symbols-outlined{
+  color: red;
+  font-weight: 900;
+  position: relative;
+  top: 0.5rem;
+  margin-right: 2px;
+}
+
+
+.ArtPage{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.A1{
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem 0;
+  box-shadow: 1px 1px 2px grey;
+}
+.A1_2{
+  height: 2rem;
+  color: #03A87C;
+  border: 1px solid #03A87C;
+  padding: 2px 10px;
+  background-color: white;
+}
+.A2{
+  width: 40%;
+  margin: 2rem auto;
+}
+.mask{
+  width: 4rem;
+  height: 4rem;
+  padding-right: 10px;
+}
+.A2_1{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+}
+.A2_1_1{
+  font-size: 20px;
+  padding: 5px 0 10px;
+}
+.lgText{
+  font-size: 12px;
+  opacity: 0.7;
+}
+#social{
+  width: 7rem;
+  height: 2rem;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+}
+.A2_2{
+  font-size: 20px;
+  margin: 1rem 0;
+}
+.A2_3{
+  margin: 2rem 0;
+}
+.A2_3_1{
+  background-color: #A2A2A2;
+  padding: 5px;
+  margin: 1rem 0.5rem;
+}
+.A2_4{
+  position: fixed;
+  left: 10%;
+  top: 40%;
+  z-index: -1;
+}
+.A3{
+  background-color: #00000029;
+  padding: 2rem 5rem;
+}
+.A3_1{
+  display: flex;
+  justify-content: space-between;
+}
+.horiz2{
+  margin: 1rem 0;
+}
+.A3_2{
+  width: 350px;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.A3_2_1{
+  width: 100%;
+  height: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+} */
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+
+  
+}
+
+/* Navbar */
+.Navbar{
+  width: 80%;
+  height: fit-content;
+  margin: 1rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0374a8;
+}
+
+.N1{
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 25px;
+
+}
+#N1_1{
+  font-size: 1.4rem;
+  font-weight: 1000;
+  transform: rotate(270deg);
+  
+}
+#N1_2{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.N2{
+  width: 100%;
+  border-bottom: 1px solid rgb(176, 70, 70);
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.title{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.active{
+  background-color: rgb(224, 235, 236);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.icon{
+  color: black !important;
+  top: 0 !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  
+}
+
+/* Image Carousel */
+.Home{
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+  
+}
+.hp1{
+  width: 800px;
+  height: 410px;
+  margin-right: 10px;
+  color: white;
+  position: relative;
+  animation: fade 1.5s;
+}
+.hp1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: url('https://wallpaperaccess.com/full/756627.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+.hp2{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  color: white;
+  position: relative;
+  animation: fade 1.5s;
+  
+}
+.hp2::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: url('https://wallpaperaccess.com/full/43577.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+#hp1_1{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+#hp1_2{
+  position: absolute;
+  left: 5%;
+  bottom: 18%;
+  opacity: 0.7;
+}
+.hp2_1{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 2%;
+  bottom: 30%;
+}
+.hp2_2{
+  font-size: 1.8rem;
+  position: absolute;
+  left: 2%;
+  bottom: 16%;
+}
+.hp2_3{
+  position: absolute;
+  left: 2%;
+  bottom: 8%;
+  opacity: 0.7;
+}
+.carousel{
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 4px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.activeDot, .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* The Latest */
+.latest{
+  width: fit-content;
+  margin-left: 8rem;
+  border-bottom: 2px solid red;
+  font-size: 1.5rem;
+}
+
+.joshua{
+  width: 350px;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+.j_1{
+  width: 100%;
+  height: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.j_2{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  border-radius: 20px;
+
+}
+.j_3{
+  opacity: 0.7;
+  margin-left: 2rem;
+}
+.j_4{
+  margin-left: 2rem;
+  border-radius: 15px;
+}
+
+/* Latest Articles */
+.Home2{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  position: relative;
+  right: 2.5rem;
+  cursor: pointer;
+}
+.castle3{
+  width: 14rem;
+  height: 8rem;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+.Adv{
+  width: 100%;
+  height: 75vh;
+  border: 1px solid #707070;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(151, 227, 167);
+}
+.latArt{
+  width: 100%;
+  height: 410px;
+  margin: auto;
+  color: rgb(236, 155, 155);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.latArt::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://wallpaperaccess.com/full/40381.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.92;
+}
+#la1{
+  font-size: 1.8rem;
+}
+#la2{
+  opacity: 0.7;
+  position: relative;
+  top: 4.5rem;
+}
+.view{
+  opacity: 0.7;
+  margin-left: 8rem;
+}
+
+/* Latest Stories */
+.stories{
+  width: 350px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: rgb(208, 121, 121);
+  border-radius: 10px;
+}
+.s_2{
+  width: 200px;
+}
+
+/* Bollywood */
+.Bollywood{
+  width: 80%;
+  height: fit-content;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.B1{
+  width: 600px;
+  height: fit-content;
+  margin: 0 1rem;
+}
+.B1_1{
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 5px;
+  border-bottom: 2px solid red;
+}
+
+.castle{
+  width: 16rem;
+  height: 11rem;
+  margin-right: 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgb(248, 179, 227);
+  
+
+}
+.g_2{
+  opacity: 0.7;
+}
+
+.B2{
+  width: 300px;
+  height: fit-content;
+  margin: 0 1rem;
+}
+
+#B2_1{
+  width: 100%;
+  height: 12rem;
+  border-radius: 4px;
+}
+.B2_2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.castle2{
+  width: 8rem;
+  height: 5.5rem;
+}
+.B2_2_1{
+  font-size: small;
+}
+.B2_3{
+  width: 100%;
+  height: 110vh;
+  /* border: 1px solid #d7b6b6; */
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(149, 216, 235);
+  border-radius: 10px;
+}
+.material-symbols-outlined{
+  color: red;
+  font-weight: 900;
+  position: relative;
+  top: 0.5rem;
+  margin-right: 2px;
+}
+
+/* Article Page */
+.ArtPage{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.A1{
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem 0;
+  box-shadow: 1px 1px 2px whitesmoke;
+}
+.A1_2{
+  height: 2rem;
+  color: #03A87C;
+  border: 1px solid #03A87C;
+  padding: 2px 10px;
+  background-color: white;
+}
+.A2{
+  width: 40%;
+  margin: 2rem auto;
+}
+.mask{
+  width: 4rem;
+  height: 4rem;
+  padding-right: 10px;
+}
+.A2_1{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+}
+.A2_1_1{
+  font-size: 20px;
+  padding: 5px 0 10px;
+}
+.lgText{
+  font-size: 12px;
+  opacity: 0.7;
+}
+#social{
+  width: 7rem;
+  height: 2rem;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+}
+.A2_2{
+  font-size: 20px;
+  margin: 1rem 0;
+}
+.A2_3{
+  margin: 2rem 0;
+}
+.A2_3_1{
+  background-color: #fb7e7e;
+  padding: 5px;
+  margin: 1rem 0.5rem;
+}
+.A2_4{
+  position: fixed;
+  left: 10%;
+  top: 40%;
+  z-index: -1;
+}
+.A3{
+  background-color: #00000029;
+  padding: 2rem 5rem;
+}
+.A3_1{
+  display: flex;
+  justify-content: space-between;
+}
+.horiz2{
+  margin: 1rem 0;
+}
+.A3_2{
+  width: 350px;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.A3_2_1{
+  width: 100%;
+  height: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}

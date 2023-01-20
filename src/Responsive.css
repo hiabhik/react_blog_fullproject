@@ -1,0 +1,264 @@
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+
+    /* The Latest */
+    .LatestBox{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .joshua{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    /* Latest Articles */
+    .Home2{
+        font-size: 1rem;
+        right: 0;
+    }
+    .castle3{
+        width: 16rem;
+        height: 11rem;
+    }
+    .Adv{
+        display: none;
+    }
+
+    /* Latest Stories */
+    .stories{
+        width: 90%;
+    }
+    .s_2{
+        width: 100%;
+    }
+    .horiz{
+        margin: 3rem 0;
+    }
+
+    /* Bollywood */
+    .Bollywood{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .B1{
+        width: 100%;
+        margin: 0 auto 2rem;
+    }
+    .B2{
+        width: 100%;
+        margin: auto;
+    }
+    #B2_1{
+        width: 80%;
+        height: 18rem;
+        padding: 20px 0;
+        position: relative;
+        left: 3rem;
+    }
+    .B2_2{
+        width: 90%;
+        font-size: 1.4rem;
+        margin: auto;
+    }
+    .castle2{
+        width: 14rem;
+        height: 9rem;
+    }
+    .B2_2_1{
+        font-size: inherit;
+    }
+    .B2_3{
+        display: none;
+    }
+
+    /* Article Page */
+    .way{
+        margin: 1rem 0 4rem;
+    }
+    #social{
+        left: 0;
+        bottom: 5rem;
+        /* width: 9rem;
+        height: 2.5rem; */
+    }
+    .A3{
+        padding: 2rem 1rem;
+    }
+    .A3_2_1{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .Navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem auto;
+    }
+    .N2{
+        display: none;
+    }
+    .icon{
+        display: inline;
+    }
+
+    /* Image Carousel */
+    /* .mySlides{
+        display: none;
+    } */
+    .carousel{
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hp1{
+        margin-right: 0;
+    }
+    .hp2{
+        display: none;
+    }
+
+    /* The latest */
+    .latest{
+        margin-left: 4rem;
+    }
+    .j_1{
+        width: 50%;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .Navbar.responsive{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem auto 0;
+    }
+    .Navbar.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+    }
+    .Navbar.responsive .N2{
+        display: block;
+        border-bottom: none;
+    }
+    .Navbar.responsive .N2 .title{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-align: center;
+        box-shadow: 1px 2px whitesmoke;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hp1{
+        width: 90%;
+        height: 50vh;
+    }
+
+    /* Home */
+    .Home{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* The latest */
+    .latest{
+        margin-left: 2rem;
+    }
+    .LatestBox{
+        width: 90%;
+        margin: 3rem 0.5rem;
+    }
+    .joshua{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .j_1{
+        width: 90%;
+        height: 180px;
+    }
+
+    /* Latest Articles */
+    .Home2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .latArt{
+        width: 90%;
+        height: 300px;
+    }
+    .view{
+        margin-left: 3rem;
+    }
+    
+    /* Bollywood */
+    .Bollywood{
+        width: 90%;
+        margin: 3rem 0.5rem;
+    }
+    #B2_1{
+        width: 90%;
+        height: 15rem;
+        left: 1.5rem;
+    }
+    .castle2{
+        width: 8rem;
+        height: 6rem;
+    }
+    .B2_2_1{
+        font-size: 0.9rem;
+    }
+    .load{
+        position: relative;
+        left: 4rem;
+        top: 1rem;
+    }
+
+    /* Article Page */
+    .A2{
+        width: 80%;
+    }
+    .A2_4{
+        display: none;
+    }
+    .A3_1{
+        flex-direction: column;
+        position: relative;
+    }
+    .A3_2{
+        width: 100%;
+        flex-direction: row;
+    }
+    .A3_2 > p{
+        display: none;
+    }
+    .A3_2_1{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Home{
+        margin: 0;
+    }
+    .hp1{
+        height: 40vh;
+    }
+    .A3_2_1{
+        margin-top: 1rem;
+    }
+}
